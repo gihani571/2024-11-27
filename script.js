@@ -1,5 +1,13 @@
 console.log("hello");
 
+let add =  document.getElementById("txtbtnAdd").value;
+
+function btnAdd(){
+    add.innerHTML += expenseCategories; 
+
+}
+
+
 fetch("money.json")
   .then((res) => res.json())
   .then((data) => {
