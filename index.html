@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Personal Bu</title>
-<!-- Add CDN links -->
-<link rel="stylesheet" href="styles.css">
+<title>Personal Budget Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-<nav><!-- Navigation --></nav>
-<div class="container">
-<!-- Dashboard content -->
-</div>
+  
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid bg-info">
+            <a class="navbar-brand" href="#"><i class="bi bi-coin"></i> Personal Budget Tracker <i class="bi bi-coin"></i></a>
+        </div>
+      </nav>
+    <div class="container bg-dark" id="ExpenseCategories">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Expense Categories</h5>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Monthly Spending</h5>
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

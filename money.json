@@ -1,0 +1,35 @@
+{
+    "expenseCategories": {
+      "Food": 300,
+      "Rent": 800,
+      "Transportation": 150,
+      "Utilities": 100,
+      "Entertainment": 200,
+      "Miscellaneous": 50
+    },
+    "monthlySpending": [
+      { "month": "January", "spent": 500 },
+      { "month": "February", "spent": 800 },
+      { "month": "March", "spent": 1150 },
+      { "month": "April", "spent": 5000 },
+      { "month": "May", "spent": 300 },
+      { "month": "June", "spent": 300 },
+      { "month": "July", "spent": 2000 },
+      { "month": "August", "spent": 2500 },
+      { "month": "September", "spent": 1800 },
+      { "month": "October", "spent": 1300 },
+      { "month": "November", "spent": 3000 },
+      { "month": "December", "spent": 10000 }
+    ],
+    "savingsGoals": {
+      "goal": 5000,
+      "current": 3500
+    },
+    "recentTransactions": [
+      { "date": "2024-11-25", "description": "Groceries", "amount": 50 },
+      { "date": "2024-11-24", "description": "Gas", "amount": 40 },
+      { "date": "2024-11-23", "description": "Movie Night", "amount": 25 },
+      { "date": "2024-11-22", "description": "Electricity Bill", "amount": 90 }
+    ]
+  }
+  
