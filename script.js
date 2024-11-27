@@ -12,8 +12,8 @@ fetch("money.json")
     
 
     
-    Object.entries(expenseCategories).forEach(([key, value]) => {
-        labels.push(key);
+    Object.entries(expenseCategories).forEach(([category, value]) => {
+        labels.push(category);
         values.push(value);
       });
       
@@ -40,16 +40,17 @@ fetch("money.json")
       },
     });
 
-    const {monthlySpending} = data;
+    const { monthlySpending } = data;
 
     const months = [];
     const spent = [];
     
 
     
-    Object.entries(monthlySpending).forEach(([key, value]) => {
-        months.push(key);
+    Object.entries(monthlySpending).forEach(([month, value]) => {
+        months.push(month);
         spent.push(value);
+    
       });
 
 
@@ -64,9 +65,9 @@ fetch("money.json")
           {
             label: "Monthly Spending",
             data: spent,
-            backgroundColor: "rgba(75, 192, 192, 0.2)",
-            borderColor: "rgba(75, 192, 192, 1)",
-            borderWidth: 1,
+            backgroundColor:  "rgb(54, 162, 235)",
+            borderColor:  "rgb(54, 168, 200)",
+            borderWidth: 2,
           },
         ],
       },
@@ -77,21 +78,56 @@ fetch("money.json")
           },
         },
       },
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
+
     });
+    const ctx3 = document.getElementById("myChart3");
+
+    const { savingsGoals } = data;
+
+    const currents = [];
+    const goals = [];
+    
+
+    
+    Object.entries(savingsGoals).forEach(([current, goal]) => {
+        currents.push(current);
+        goals.push(goal);
+    
+      });
+      new Chart(ctx3, {
+        type: "bar",
+        data: {
+          labels: currents,
+          datasets: [
+            {
+              label: "Savings Goals",
+              data: goals,
+              backgroundColor: "rgba(75, 192, 192, 0.2)",
+              borderColor: "rgba(75, 192, 192, 1)",
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
   
+  
+      });
 
 
 
 
 
-})
+
+
+
+
+
+  })
  
